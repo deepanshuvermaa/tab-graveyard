@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Graveyard — Never Lose a Closed Tab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; color: #1a1a2e; background: #fff; }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+    nav { padding: 20px 0; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 16px; }
+    .logo-box { width: 32px; height: 32px; background: #1a1a2e; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 14px; }
+    nav a { font-size: 13px; font-weight: 500; color: #1a1a2e; text-decoration: none; padding: 8px 16px; border: 1px solid #e5e5e5; border-radius: 8px; }
+    nav a:hover { border-color: #1a1a2e; }
+    .hero { padding: 80px 0 60px; text-align: center; }
+    .badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; background: #f5f5f5; border-radius: 20px; font-size: 11px; font-weight: 500; color: #666; margin-bottom: 20px; }
+    h1 { font-size: 42px; font-weight: 700; line-height: 1.2; margin-bottom: 16px; letter-spacing: -0.5px; }
+    .hero p { font-size: 16px; color: #666; max-width: 520px; margin: 0 auto 32px; line-height: 1.7; }
+    .cta { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: #1a1a2e; color: #fff; border-radius: 10px; font-size: 14px; font-weight: 500; text-decoration: none; }
+    .cta:hover { background: #2d2d4e; }
+    .features { padding: 60px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .feature { padding: 28px; border: 1px solid #f0f0f0; border-radius: 14px; }
+    .feature h3 { font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+    .feature p { font-size: 13px; color: #666; line-height: 1.6; }
+    .how { padding: 60px 0; text-align: center; }
+    .how h2 { font-size: 24px; font-weight: 600; margin-bottom: 32px; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; text-align: left; }
+    .step { padding: 24px; background: #fafafa; border-radius: 12px; }
+    .step-num { font-size: 11px; font-weight: 700; color: #999; margin-bottom: 8px; }
+    .step h4 { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+    .step p { font-size: 12px; color: #666; line-height: 1.5; }
+    footer { padding: 32px 0; text-align: center; font-size: 11px; color: #bbb; border-top: 1px solid #f5f5f5; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo"><div class="logo-box">☠</div> Tab Graveyard</div>
+      <a href="#install">Install Extension</a>
+    </nav>
+
+    <section class="hero">
+      <div class="badge">Chrome Extension · Manifest V3</div>
+      <h1>Your closed tabs<br>deserve a second life</h1>
+      <p>Every tab you close is captured, searchable, and restorable. Grouped by date, paginated, exportable as JSON. Zero external dependencies.</p>
+      <a href="#install" class="cta">Install Tab Graveyard →</a>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h3>Instant Capture</h3>
+        <p>Automatically saves title, URL, favicon, and timestamp the moment you close any tab.</p>
+      </div>
+      <div class="feature">
+        <h3>Search & Filter</h3>
+        <p>Find any closed tab instantly. Search by title or URL across your entire history.</p>
+      </div>
+      <div class="feature">
+        <h3>Date Grouping</h3>
+        <p>Tabs organized by Today, Yesterday, This Week, and Older for quick scanning.</p>
+      </div>
+      <div class="feature">
+        <h3>Bulk Restore</h3>
+        <p>Restore all tabs from today with one click. Never lose a research session again.</p>
+      </div>
+      <div class="feature">
+        <h3>Export as JSON</h3>
+        <p>Download your entire tab history as a JSON file for backup or analysis.</p>
+      </div>
+      <div class="feature">
+        <h3>Auto-Purge</h3>
+        <p>Configure automatic cleanup after N days. Keep history lean without manual effort.</p>
+      </div>
+    </section>
+
+    <section class="how" id="install">
+      <h2>Get started in 30 seconds</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h4>Download</h4>
+          <p>Clone or download the Tab_Graveyard_Extension folder from this project.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h4>Load in Chrome</h4>
+          <p>Go to chrome://extensions, enable Developer Mode, click "Load unpacked", select the folder.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h4>Close tabs freely</h4>
+          <p>Every closed tab is now captured. Click the extension icon to search and restore.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>Built as part of the 21-Day Build Challenge · Day 2 · No external libraries</footer>
+  </div>
+</body>
+</html>
